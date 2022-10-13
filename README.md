@@ -2,6 +2,11 @@
 
 ## Your personal recipes book and meal planner.
 
+LIVE: [mealYouApp](https://meal-planner-170c5.web.app/)
+
+:bangbang: for now you can register with **ANY e-mail adress**
+
+
 This is a simple website to create, store, and plan your favourites meals for a day you choose to eat them. :pizza:
 
 ## :grey_exclamation: Technologies that should be used :
@@ -15,17 +20,25 @@ Yet i know the framework such as **tailwind.css** or **Sass** should be used for
 Meal You is **my first beginner project** so the gate is open for further improvement... someday :sweat_smile:
 
 :white_check_mark: Notifications,
+
 :white_check_mark: Users lobby with chat window,
+
 :white_check_mark: calories, micro and makro counters,
+
 :white_check_mark: functional shopping list, easier to edit.
 
-and hopefully more! 
+...and hopefully more! 
 
-## images and SVG's:
+## Images and SVG's:
 
 Photo by <a href="https://unsplash.com/@picoftasty?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mae Mu</a> on <a href="https://unsplash.com/s/photos/delicious-dark?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 [unDraw](https://undraw.co/illustrations)
 
-### React Icons
+React Icons
+
 [React Icons](https://react-icons.github.io/react-icons)
+
+### Contact:
+
+**rafal.szadkowski@adres.pl**
