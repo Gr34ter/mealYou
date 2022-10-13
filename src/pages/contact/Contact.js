@@ -117,7 +117,7 @@ function Contact() {
             <div ref={refContact}>
                 <motion.div className='email-info'>
                     <h4 className='info-text'>Drop us an email!</h4>
-                    <p>some@mail.com</p>
+                    <p>rafal.szadkowski@adres.pl</p>
                     <motion.img src={mail} alt="mail" className='contact-info-icon' animate={contactAnimation}/>
                 </motion.div>
                 <motion.div className='message-info'>

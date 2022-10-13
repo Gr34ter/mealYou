@@ -10,7 +10,7 @@ export default function Footer() {
       <div className='contact-details'>
         <div>
           <p>
-            <span className='contact-type'>email:</span> some@mail.pl
+            <span className='contact-type'>email:</span> rafal.szadkowski@adres.pl
           </p>
           <p>
             <span className='contact-type'>tel:</span> 123 456 789
@@ -26,7 +26,7 @@ export default function Footer() {
         <div><a href='https://twitter.com/' target="blank"><BsTwitter className='social-icon twitter'/></a></div>
         <div><a href='https://github.com/' target="blank"><BsGithub className='social-icon github'/></a></div>
       </div>
-      <p className='copyright-text'>Copyright &copy; erra Company 2022</p>
+      <p className='copyright-text'>Copyright &copy; erra Company, rafal szadkowski 2022</p>
     </footer>
     
   )
