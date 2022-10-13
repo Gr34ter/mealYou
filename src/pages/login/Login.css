@@ -1,0 +1,86 @@
+.auth-form {
+    grid-column: 1 / span 2;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif ;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem;
+    width: 100%;
+    border-radius: 5px;
+}
+.auth-form h3 {
+    color: var(--honeydew);
+    font-size: 1.4rem;
+}
+.navigate-to-registration{
+    color: var(--text-color-dark);
+    text-align: right;
+}
+.navigate-to-registration > span:hover {
+    color: var(--neon-blue-color);
+    cursor: pointer;
+}
+.auth-form label {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.auth-form span {
+    color: var(--text-color-light);
+}
+.auth-form label input {
+    font-size: 1rem;
+    padding: .8rem;
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 5px;
+    color: var(--honeydew);
+    background-color: transparent;
+    border: 2px solid var(--pastel-pink);
+    outline: none;
+}
+.auth-form label input:focus{
+    border: 2px solid var(--pastel-blue);
+}
+.auth-form button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin: 30px auto;
+    width: 50%;
+    cursor: pointer;
+    height: 2.7rem;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    background-color: var(--faded-icon);
+    border: none;
+    color: var(--text-color-lighter);
+    transition: all ease .2s;
+}
+.auth-form button:hover {
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    background-color: var(--neon-blue-color);
+}
+@media only screen and (min-width: 450px) {
+    .auth-form{
+        width: 75%;
+    }
+}
+@media only screen and (min-width: 600px){
+    .auth-form{
+        width: 65%;
+    }
+}
+@media only screen and (min-width: 760px) {
+    .auth-form{
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .auth-form{
+        width: 35%;
+    }
+}

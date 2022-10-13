@@ -1,0 +1,112 @@
+nav {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    background-color: transparent;
+    z-index: 2;
+    position: relative;
+}
+.logo{
+    font-family: 'Pacifico', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    color: var(--logo-pinky-color);
+}
+.navbar{
+    display: none;
+}
+.user-container{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    color: var(--pastel-yellow);
+    font-size: .7rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 7vh;
+    left: 1rem;
+}
+.user-container p {
+    font-family: 'Pacifico', sans-serif;
+}
+.user-container span{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--pastel-pink);
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+
+/* hamburger */
+.hamburger-wrapper{
+    margin-right: 2rem;
+    margin-left: 2rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s ease;
+}
+.hamburger-icon, 
+.hamburger-close{ 
+    color: var(--text-color-lighter);
+    font-size: 2rem;
+    transition: all .3s ease;
+}
+.hamburger-icon:hover{
+    color: var(--neon-blue-color);
+    cursor: pointer;
+}
+.hamburger-close:hover{
+    cursor: pointer;
+    color: var(--imperial-red);
+}
+@media only screen and (min-width: 768px) {
+    .logo{
+        font-size: 1.6rem;
+        margin-left: 2rem;
+    }
+    .user-container{
+        position: absolute;
+        font-size: .8rem;
+    }
+}
+@media only screen and (min-width: 900px) {
+    .user-container{
+        position: absolute;
+        margin-left: 1.8rem;
+        display: flex;
+        justify-content: center;
+        font-size: .9rem;
+    }
+    .user-container span{
+        margin-left: .3rem;
+    }
+    .hamburger-wrapper{
+        display: none;
+    }
+    .menu-mobile{
+        display: none;
+    }
+    .navbar{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 1.5rem;
+    }
+    .logo{
+        margin-left: 3rem;
+    }
+}

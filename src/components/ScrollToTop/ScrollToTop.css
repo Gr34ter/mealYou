@@ -1,0 +1,13 @@
+.scroll-to-top{
+  position: fixed;
+  bottom: 8rem;
+  right: 0.3rem;
+  font-size: 3.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: rgba(238, 166, 228, 0.767);
+  border: none;
+  cursor: pointer;
+}

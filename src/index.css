@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@200;300;400;500&family=Noto+Sans:wght@300;400&family=Pacifico&family=Poppins:wght@300;400&display=swap');
+
+/* variables */
+:root {
+  --primary-color-dark: rgb(30, 20, 43);
+  --primary-color-darker: rgb(25, 19, 31);
+  --primary-dark-transparent:rgba(11, 0, 12, 0.914);
+  --neon-blue-color: #4abcbc;
+  --text-color-light: #d1d1d1;
+  --text-color-lighter: #eeeeee;
+  --text-color-darker: #353434;
+  --text-color-dark: #686868;
+  --logo-pinky-color: rgb(221, 0, 206);
+  --pastel-blue: #caddff;
+  --pastel-pink: #f0baff;
+  --pastel-yellow: #feba7b;
+  --faded-icon: #998ef9;
+
+  --imperial-red: #e63946ff;
+  --honeydew: rgb(254, 255, 235);
+
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  background-image: linear-gradient(to right, rgb(19, 15, 33), rgb(43, 0, 65));
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+ul, li, p, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  cursor: default;
+}
+
