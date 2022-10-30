@@ -6,6 +6,13 @@ LIVE: [mealYouApp](https://meal-planner-170c5.web.app/)
 
 :bangbang: for now you can register with **ANY e-mail adress**
 
+Also test user is free too used:
+
+email: testguy@dev.mail
+password: testguy123
+
+**ENJOY**
+
 This is a simple website to create, store, and plan your favourites meals for a day you choose to eat them. :pizza:
 
 ## :grey_exclamation: Technologies that should be used :
