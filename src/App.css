@@ -19,23 +19,40 @@
 }
 .planner-info-header,
 .mealsbook-info-header,
-.shopping-list-info-header{
+.shopping-list-info-header {
   color: var(--text-color-lighter);
   margin-top: 2rem;
 }
 
 .planner-info-text,
 .mealsbook-info-text,
-.shopping-list-info-text{
+.shopping-list-info-text {
   padding: 1rem;
   line-height: 3rem;
   color: var(--text-color-light);
 }
 .lint-text {
-  color: var(--neon-blue-color);
+  color: var(--pastel-yellow);
   margin: 0 4px;
   padding: 8px;
   border-radius: 20px;
+}
+.loading-container {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.error {
+  color: var(--imperial-red);
+  font-weight: bolder;
+  margin-bottom: 1rem;
 }
 
 .toMeals-btn,
@@ -44,36 +61,33 @@
   justify-content: center;
   align-items: center;
   margin: 1.5rem auto;
-  background-color:var(--faded-icon);
+  background-color: var(--neon-blue-color);
   border-radius: 50px;
   border-bottom-right-radius: 0px;
   letter-spacing: 1px;
   padding: 1rem;
   cursor: pointer;
-  transition: all .2s ease-in;
+  transition: all 0.2s ease-in;
   color: var(--text-color-lighter);
   font-size: 1.1rem;
   font-weight: bold;
 }
 .toMeals-btn:hover,
 .submit-meal-btn:hover {
-  background-color:var(--neon-blue-color);
+  background-color: var(--positive-green);
   border-bottom-right-radius: 50px;
 }
-
-.loading-container{
-  height: 80%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.login-now {
+  margin-right: auto;
+  padding-top: 4rem;
 }
-.loading{
-  font-size: 2.5rem;
+.login-now a {
+  color: var(--text-color-lighter);
+  font-size: 1.3rem;
   letter-spacing: 2px;
-  color: #fff;
-}
-.error {
-  color: var(--imperial-red);
-  font-weight: bolder;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background-color: var(--neon-blue-color);
+  border-bottom-right-radius: 0;
+  transition: all 0.3s ease;
 }

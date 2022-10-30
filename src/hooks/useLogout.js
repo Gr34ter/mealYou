@@ -1,31 +1,29 @@
-import { useState } from 'react'
+import { useState } from "react";
 import { auth } from "../firebase/config";
 import { signOut } from "firebase/auth";
 import { useAuthContext } from "./useAuthContext";
 
 export const useLogout = () => {
-    const { dispatch } = useAuthContext()
-    const [error, setError] = useState(null);
-    const [isPending, setIsPending] = useState(false);
+  const { dispatch } = useAuthContext();
+  const [error, setError] = useState(null);
+  const [isPending, setIsPending] = useState(false);
 
-    const logout = async () => {
-        setError(null)
-        setIsPending(true)
-        
-        try {
-            await signOut(auth)
-            dispatch({type: 'LOGOUT'})
+  const logout = async () => {
+    setError(null);
+    setIsPending(true);
 
-            setIsPending(false)
-            setError(null)
-                
-        } catch (err) {
-            console.log(err.message);
-            setError(error)
-            setIsPending(false)
-        }
-    } 
-    
+    try {
+      await signOut(auth);
+      dispatch({ type: "LOGOUT" });
 
-    return { logout, error, isPending }
-}
+      setIsPending(false);
+      setError(null);
+    } catch (err) {
+      console.log(err.message);
+      setError(error);
+      setIsPending(false);
+    }
+  };
+
+  return { logout, error, isPending };
+};

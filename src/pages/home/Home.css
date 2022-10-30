@@ -1,171 +1,141 @@
 .home-wrapper {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    margin: 0;
-    box-sizing: border-box;
-    grid-column: 1 / span 2;
-    background-image: url('../../assets/bgDark.webp');
-    background-color: var(--primary-color-darker);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-y: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  margin: 0;
+  box-sizing: border-box;
+  grid-column: 1 / span 2;
+  background-image: url("../../assets/bgDark.webp");
+  background-color: var(--primary-color-darker);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
 }
-.home-container{
-    color: var(--honeydew);
-    display: flex;
-    height: 100%;
-    width: 100%;
-    flex-direction: column;
-
+.home-container {
+  color: var(--honeydew);
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
 }
 .greeting-container,
-.greeting-container-when-logged{
-    flex: 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.greeting-container-when-logged {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.welcome-container{
-    padding-left: 3rem;
-    text-align: left;
+.welcome-container {
+  padding-left: 3rem;
+  text-align: left;
 }
-.home-features-container{
-    margin-top: 4rem;
-    width: 100%;
-    display: flex;
-    background: rgba(33, 33, 33, 0.61);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 0px );
-    -webkit-backdrop-filter: blur( 0px );
+.greeting-header {
+  text-align: left;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  font-size: 2.2rem;
 }
-.home-features-container a {
-    flex: 1;
-    padding: 1rem 0;
-    transition: all .3s ease;
+.greeting-text {
+  margin-top: 1rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  line-height: 1.7rem;
+  font-weight: bold;
 }
-.home-features-container a:hover{
-    cursor: pointer;
-    background: rgba(23, 9, 42, 0.063);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 0px );
-    -webkit-backdrop-filter: blur( 0px );
-}
-.home-features-container h3{
-    color: var(--text-color-lighter);
-}
-.home-feature-icon{
-    margin-top: 1rem;
-    font-size: 2.2rem;
-    color: var(--faded-icon);
-}
-.greeting-header{
-    text-align: left;
-    margin-bottom: 2rem;
-    letter-spacing: 2px;
-    font-size: 2.2rem;
-}
-.greeting-text{
-    margin-top: 1rem;
-    text-align: left;
-    margin-bottom: 1rem;
-    line-height: 1.7rem;
-    font-weight: bold;
-}
-.read-more{
-    margin-top: 1.2rem;
+.read-more {
+  margin-top: 1.2rem;
 }
 .read-more a {
-    border-radius: 20px;
-    padding: 0.3rem .5rem;
-    letter-spacing: 2px;
-    font-size: 1rem;
-    width: fit-content;
-    color: rgb(2, 35, 58);
-    border: 2px solid var(--text-color-light);
-    border-bottom-right-radius: 0px;
-    background-color: var(--text-color-light);
-    transition: all .3s ease;
+  border-radius: 20px;
+  padding: 0.3rem 0.5rem;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  width: fit-content;
+  font-weight: bold;
+  color: var(--text-color-darker);
+  border: 2px solid var(--text-color-light);
+  border-bottom-right-radius: 0px;
+  background-color: var(--text-color-light);
+  transition: all 0.3s ease;
 }
-.read-more a:hover{
-    background-color: var(--honeydew);
-    border-bottom-right-radius: 20px;
-    cursor: pointer;
+.read-more a:hover {
+  background-color: var(--honeydew);
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
 }
-.get-started{
-    flex: 1;
+.get-started {
+  flex: 1;
 }
 .get-started a,
-.get-started-about a{
-    color: var(--text-color-lighter);
-    font-size: 1.3rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    padding: 6px 12px ;
-    border-radius: 20px;
-    background-color:var(--faded-icon);
-    border-bottom-right-radius: 0;
-    transition: all .3s ease;
+.get-started-about a {
+  color: var(--text-color-lighter);
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background-color: var(--neon-blue-color);
+  border-bottom-right-radius: 0;
+  transition: all 0.3s ease;
 }
-.get-started-about{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    grid-column: 1 / span 2;
+.get-started-about {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  grid-column: 1 / span 2;
 }
 .get-started a:hover,
 .get-started-about a:hover,
-.login-now a:hover{
-    border-bottom-right-radius: 20px;
-    cursor: pointer;
-    background-color: var(--neon-blue-color);
+.login-now a:hover {
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
+  background-color: var(--positive-green);
 }
 
 @media only screen and (min-width: 600px) {
-    .home-container{
-        width: 80%;
-    }
-    .greeting-container-when-logged,
-    .greeting-container{
-        width: 100%;
-        margin-left: 0;
-    }
-    .greeting-header{
-        font-size: 1.9rem;
-    }
-    .greeting-text{
-        font-size: 1.2rem;
-    }
-    .get-started a{
-        font-size: 1.6rem;
-    }
+  .home-container {
+    width: 80%;
+  }
+  .greeting-container-when-logged,
+  .greeting-container {
+    width: 100%;
+    margin-left: 0;
+  }
+  .greeting-header {
+    font-size: 1.9rem;
+  }
+  .greeting-text {
+    font-size: 1.2rem;
+  }
+  .get-started a {
+    font-size: 1.6rem;
+  }
 }
 @media only screen and (min-width: 900px) {
-    .greeting-header{
-        font-size: 2.4rem;
-    }
-    .greeting-text{
-        margin-top: 3rem;
-        font-size: 1.5rem;
-    }
-    .read-more{
-        font-size: 1.3rem;
-    }
-    .get-started{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .greeting-header {
+    font-size: 2.4rem;
+  }
+  .greeting-text {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+  }
+  .read-more {
+    font-size: 1.3rem;
+  }
+  .get-started {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
-@media only screen and (min-width: 1200px){
-    .home-features-container{
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+@media only screen and (min-width: 1200px) {
+  .home-features-container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

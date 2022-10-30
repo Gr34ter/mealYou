@@ -1,58 +1,59 @@
 .side-bar * {
-    box-sizing: border-box;
-    font-family: 'Noto Sans', sans-serif;}
-
-.side-bar{
-    z-index: 3;
-    position: fixed;
-    top: 15vh;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
 }
 
-.side-bar ul {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    background-color: var(--primary-dark-transparent);
-    padding: 2rem 0;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border: 1px solid var(--faded-icon);
-    border-left: none;
+.side-bar {
+  z-index: 3;
+  position: fixed;
+  top: 15vh;
 }
-.side-bar ul a {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    padding: 1.6rem 1.3rem;
-    transition: all .2s ease-in-out;
+
+.side-bar .side-bar-links {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: var(--primary-color-darker);
+  padding: 2rem 0;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: 1px solid var(--faded-icon);
+  border-left: none;
+}
+.side-bar .side-bar-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 1.6rem 1.3rem;
+  transition: all 0.2s ease-in-out;
 }
 .sidebar-icon {
-    font-size: 1.5rem;
-    color: var(--honeydew);
-    transition: all .3s ease;
+  font-size: 1.5rem;
+  color: var(--honeydew);
+  transition: all 0.3s ease;
 }
-.side-bar ul li:hover{
-    cursor: pointer;
+.side-bar .side-bar-links li:hover {
+  cursor: pointer;
 }
-.side-bar ul li:hover .sidebar-icon {
-    color: var(--faded-icon);
+.side-bar .side-bar-links li:hover .sidebar-icon {
+  color: var(--faded-icon);
 }
-.close-btn{
-    position: absolute;
-    top: 42%;
-    left: 80%;
-    width: 2.2rem;
-    height: 2.2rem;
-    background-color: var(--primary-color-darker);
-    border-radius: 50%;
-    border: 2px solid var(--faded-icon);
-    color: #fff;
-    font-size: 1.3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.close-btn {
+  position: absolute;
+  top: 42%;
+  left: 80%;
+  width: 2.2rem;
+  height: 2.2rem;
+  background-color: var(--primary-color-darker);
+  border-radius: 50%;
+  border: 2px solid var(--faded-icon);
+  color: #fff;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.close-btn:hover{
-    cursor: pointer;
+.close-btn:hover {
+  cursor: pointer;
 }

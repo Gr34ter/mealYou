@@ -1,4 +1,4 @@
-# Meal You 
+# Meal You
 
 ## Your personal recipes book and meal planner.
 
@@ -6,12 +6,11 @@ LIVE: [mealYouApp](https://meal-planner-170c5.web.app/)
 
 :bangbang: for now you can register with **ANY e-mail adress**
 
-
 This is a simple website to create, store, and plan your favourites meals for a day you choose to eat them. :pizza:
 
 ## :grey_exclamation: Technologies that should be used :
 
-:bangbang: 
+:bangbang:
 During writing this project i learned a lot.
 Yet i know the framework such as **tailwind.css** or **Sass** should be used for css along with **BEM** structure.
 
@@ -27,7 +26,7 @@ Meal You is **my first beginner project** so the gate is open for further improv
 
 :white_check_mark: functional shopping list, easier to edit.
 
-...and hopefully more! 
+...and hopefully more!
 
 ## Images and SVG's:
 

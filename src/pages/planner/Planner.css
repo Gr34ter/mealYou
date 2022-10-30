@@ -1,4 +1,7 @@
 /* Rest coming from MealsBook.css */
-.planner-wrapper{
-    display: flex;
+.planner-wrapper {
+  display: flex;
+}
+.planner-wrapper {
+  align-items: stretch;
 }
