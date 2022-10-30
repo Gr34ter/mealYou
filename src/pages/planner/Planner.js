@@ -3,7 +3,6 @@ import { useAuthContext } from "../../hooks/useAuthContext";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
-import MealsFilter from "../../components/MealsFilter/MealsFilter";
 import MealsList from "../../components/MealsList/MealsList";
 
 // styles
@@ -12,33 +11,9 @@ import "./Planner.css";
 export default function Planner() {
   const { user } = useAuthContext();
   const { documents, error, isPending } = useCollection("meals", user.uid);
-  const [currentFilter, setcurrentFilter] = useState("all");
   const [plannedDocuments, setPlannedDocuments] = useState([]);
 
   const isInPlanner = true;
-
-  const sortedByFilterMeals = documents
-    ? documents.filter((document) => {
-        switch (currentFilter) {
-          case "all":
-            return true;
-          case "breakfast":
-          case "lunch":
-          case "dinner":
-          case "snack":
-          case "other":
-            return document.category === currentFilter;
-          case "favourites":
-            return document.isFav;
-          default:
-            return true;
-        }
-      })
-    : null;
-
-  const changeFilter = (newFilter) => {
-    setcurrentFilter(newFilter);
-  };
 
   useEffect(() => {
     if (documents) {
@@ -52,14 +27,8 @@ export default function Planner() {
   if (documents) {
     return (
       <div className="planner-wrapper">
-        {plannedDocuments.length !== 0 && (
-          <MealsFilter changeFilter={changeFilter} />
-        )}
         <div className="planner-container">
-          <MealsList
-            documents={sortedByFilterMeals}
-            isInPlanner={isInPlanner}
-          />
+          <MealsList documents={plannedDocuments} isInPlanner={isInPlanner} />
         </div>
         {plannedDocuments.length === 0 && (
           <div className="planner-info">
